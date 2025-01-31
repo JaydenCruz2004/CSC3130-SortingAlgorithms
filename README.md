@@ -15,6 +15,17 @@ This repository contains the implementation of various sorting algorithms as req
 
 Additionally, the assignment includes performance testing and comparison of these algorithms.
 
+## Time Complexities of Sorting Algorithms
+
+| Algorithm       | Best Case         | Average Case      | Worst Case        | Space Complexity |
+|-----------------|-------------------|-------------------|-------------------|------------------|
+| **Bubble Sort** | O(n)              | O(n²)             | O(n²)             | O(1)             |
+| **Insertion Sort** | O(n)           | O(n²)             | O(n²)             | O(1)             |
+| **Selection Sort** | O(n²)          | O(n²)             | O(n²)             | O(1)             |
+| **Shell Sort**  | O(n log n)        | O(n log² n)       | O(n²)             | O(1)             |
+| **Quick Sort**  | O(n log n)        | O(n log n)        | O(n²)             | O(log n)         |
+| **Merge Sort**  | O(n log n)        | O(n log n)        | O(n log n)        | O(n)             |
+
 ## Assignment Breakdown
 
 ### 1. Text Problems
