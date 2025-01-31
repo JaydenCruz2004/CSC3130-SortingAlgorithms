@@ -1,6 +1,6 @@
 # Assignment 2 – Sorting Algorithms
 
-**Deadline:** Tuesday, February 06, 2025, 9:59 pm
+**Deadline:** Thursday, February 06, 2025, 9:59 pm
 
 ## Overview
 
@@ -14,8 +14,6 @@ This repository contains the implementation of various sorting algorithms as req
 - **Mergesort**
 
 Additionally, the assignment includes performance testing and comparison of these algorithms.
-
-## Project Structure
 
 ## Assignment Breakdown
 
@@ -50,9 +48,9 @@ Additionally, the assignment includes performance testing and comparison of thes
 Each sorting algorithm is implemented as its own class. For example:
 
 ```java
-public class BubbleSort implements SortingAlgorithm {
+public class BubbleSort implements Sortable {
     @Override
-    public int[] sorty(int[] input) {
+    public int[] sort(int[] arr) {
         // Bubble Sort Implementation
     }
 }
