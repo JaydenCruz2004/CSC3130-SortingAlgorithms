@@ -16,4 +16,4 @@ This repository contains the implementation of various sorting algorithms as req
 Additionally, the assignment includes performance testing and comparison of these algorithms.
 
 ## Project Structure
-
+/SortingAlgorithms │ ├── src/ │ ├── algorithms/ │ │ ├── BubbleSort.java │ │ ├── InsertionSort.java │ │ ├── SelectionSort.java │ │ ├── ShellSort.java │ │ ├── QuickSort.java │ │ └── MergeSort.java │ │ │ ├── interface/ │ │ └── SortingAlgorithm.java │ │ │ ├── performance/ │ │ ├── Tester.java │ │ └── Performance.java │ │ │ └── ksorting/ │ └── KSortedArray.java │ ├── README.md └── report.txt
