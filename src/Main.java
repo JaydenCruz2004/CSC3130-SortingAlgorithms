@@ -19,5 +19,10 @@ public class Main {
         int[] sortedSelection = selection.sorty(unsortedArr);
         System.out.print("\nSelection Sort: " + Arrays.toString(sortedSelection));
 
+        //Shell Sort
+        Sortable shell = new ShellSort();
+        int[] sortedShell = shell.sorty(unsortedArr);
+        System.out.print("\nShell Sort: " + Arrays.toString(sortedShell));
+
     }
 }
