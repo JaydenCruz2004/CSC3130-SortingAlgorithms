@@ -29,5 +29,10 @@ public class Main {
         int[] sortedMerge = merge.sorty(unsortedArr);
         System.out.print("\nMerge Sort: " + Arrays.toString(sortedMerge));
 
+        //Quick Sort
+        Sortable quick = new QuickSort();
+        int[] sortedQuick = quick.sorty(unsortedArr);
+        System.out.print("\nQuick Sort: " + Arrays.toString(sortedQuick));
+
     }
 }

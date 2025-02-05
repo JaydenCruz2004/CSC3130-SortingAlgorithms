@@ -33,6 +33,6 @@ public class Tester {
             totalTime += singleTest(size);
         }
         double avgTime = totalTime / interations;
-        System.out.println("Sorted " + size + "elements in  " + avgTime + "ms (avg)");
+        System.out.println("Sorted " + size + " elements in  " + avgTime + "ms (avg)");
     }
 }
