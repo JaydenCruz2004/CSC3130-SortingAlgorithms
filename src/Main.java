@@ -24,5 +24,10 @@ public class Main {
         int[] sortedShell = shell.sorty(unsortedArr);
         System.out.print("\nShell Sort: " + Arrays.toString(sortedShell));
 
+        //Merge Sort
+        Sortable merge = new MergeSort();
+        int[] sortedMerge = merge.sorty(unsortedArr);
+        System.out.print("\nMerge Sort: " + Arrays.toString(sortedMerge));
+
     }
 }
