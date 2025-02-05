@@ -9,10 +9,10 @@ public class Performance {
         Sortable[] sortingAlgorithms = {
                 new BubbleSort(),
                 new InsertionSort(),
-                new ShellSort(),
                 new SelectionSort(),
-                new MergeSort(),
+                new ShellSort(),
                 new QuickSort(),
+                new MergeSort()
         };
 
 
@@ -21,12 +21,19 @@ public class Performance {
             PrintWriter print = new PrintWriter(file);
 
             for (Sortable algorithm : sortingAlgorithms) {
-                System.out.println("\nSorting Algorithm -> " + algorithm.getClass().getName());
+                print.println("\nSorting Algorithm -> " + algorithm.getClass().getSimpleName()); // Writing to .txt
+                System.out.println("\nSorting Algorithm -> " + algorithm.getClass().getSimpleName());
+
 
                 Tester tester = new Tester(algorithm);
 
                 for (int size : arraySizes) {
-                    tester.test(iterations, size);
+
+                    double avgTime = tester.test(iterations, size);
+                    //write to the .txt
+                    print.println("Sorted " + size + " elements in " + avgTime + "ms (avg)");
+                    //print to the console
+                    System.out.println("Sorted " + size + " elements in " + avgTime + "ms (avg)");
 
                 }
             }

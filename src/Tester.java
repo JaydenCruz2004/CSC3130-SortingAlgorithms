@@ -1,6 +1,8 @@
+import java.io.Console;
 import java.util.Random;
 
 public class Tester {
+    public static Console print;
     private Sortable sa;
 
     //Constructor
@@ -26,13 +28,14 @@ public class Tester {
         return endTime - startTime;
     }
 
-    public void test(int interations, int size) {
+    public double test(int interations, int size) {
         double totalTime = 0.0;
 
         for (int i = 0; i < interations; i++) {
             totalTime += singleTest(size);
         }
         double avgTime = totalTime / interations;
-        System.out.println("Sorted " + size + " elements in  " + avgTime + "ms (avg)");
+
+        return avgTime;
     }
 }
