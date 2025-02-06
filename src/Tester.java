@@ -1,8 +1,6 @@
-import java.io.Console;
 import java.util.Random;
 
 public class Tester {
-    public static Console print;
     private Sortable sa;
 
     //Constructor

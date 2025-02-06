@@ -26,7 +26,6 @@ public class Graph extends JFrame {
                 false // URLs
         );
 
-        // Customize the chart (optional)
         chart.setBackgroundPaint(Color.white);
 
         // Add the chart panel to the frame
