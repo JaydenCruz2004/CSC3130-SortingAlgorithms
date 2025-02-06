@@ -2,10 +2,13 @@ import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
 import org.jfree.data.category.DefaultCategoryDataset;
+
 import javax.swing.*;
 import java.awt.*;
 //Resources Used:
 // https://steemit.com/visualization/@datatreemap/visualize-a-multiple-lines-graph-with-jfreechart-in-java
+// https://www.javatpoint.com/jfreechart-line-chart
+
 public class KGraph extends JFrame {
 
     public KGraph() {
