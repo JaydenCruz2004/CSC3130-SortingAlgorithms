@@ -6,6 +6,7 @@ import javax.swing.*;
 import java.awt.*;
 //Resources Used:
 // https://steemit.com/visualization/@datatreemap/visualize-a-multiple-lines-graph-with-jfreechart-in-java
+// https://www.tutorialspoint.com/jfreechart/jfreechart_line_chart.htm
 public class Graph extends JFrame {
 
     public Graph() {
@@ -20,7 +21,7 @@ public class Graph extends JFrame {
                 "Number of Elements (N)", // X-Axis label
                 "Time (ms)", // Y-Axis label
                 dataset, // Dataset
-                org.jfree.chart.plot.PlotOrientation.VERTICAL, // Orientation
+                org.jfree.chart.plot.PlotOrientation.VERTICAL,
                 true, // Include legend
                 true, // Tooltips
                 false // URLs
@@ -28,7 +29,6 @@ public class Graph extends JFrame {
 
         chart.setBackgroundPaint(Color.white);
 
-        // Add the chart panel to the frame
         ChartPanel chartPanel = new ChartPanel(chart);
         chartPanel.setPreferredSize(new Dimension(800, 600));
         setContentPane(chartPanel);
